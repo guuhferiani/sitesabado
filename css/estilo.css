@@ -5,11 +5,11 @@
     /* definir cores padrão em Variável */
     
     --primary-color: #f0f0f0;  /* cor textos */
-    --primary-bg-color: #111217;  /* BG = Background */
+    --primary-bg-color: #171111;  /* BG = Background */
     --secondary-bg-color: #C7c8c9;
     --primary-border-color: #28292E;
     --secondary-border-color: #56575A;
-    
+        
     /* definir cores padrão para os TEXTOS em Variável */
     --title-color: #F0F0F0;
     --text-color: #9a9a9c;
@@ -53,3 +53,48 @@ body {
     font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-color); /* cor do Texto*/
 }
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+a:hover {
+    color: var(--primary-color);
+}
+i {
+    color: var(--icon-color);
+}
+b {
+    font-weight: 400;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: 200;  
+}
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.4rem;
+}
+h3 {
+    font-size: 1.55rem;
+    text-align: left;
+}
+h4 {
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 1.15rem;
+    text-align: left;
+}
+h1, h2, h3 {
+    font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: var(--title-color);
+    font-weight: 200;
+}
+p, span, li {
+    font-size: 1rem;
+}
+p {
+    text-align: justify;
+}
+
