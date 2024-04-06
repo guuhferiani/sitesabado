@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap');
+
+/* definir o tema dark do site  */
+:root, :root[data-theme='dark'] {
+    /* definir cores padrão em Variável */
+    
+    --primary-color: #f0f0f0;  /* cor textos */
+    --primary-bg-color: #111217;  /* BG = Background */
+    --secondary-bg-color: #C7c8c9;
+    --primary-border-color: #28292E;
+    --secondary-border-color: #56575A;
+    
+    /* definir cores padrão para os TEXTOS em Variável */
+    --title-color: #F0F0F0;
+    --text-color: #9a9a9c;
+    --link-color:#9a9a9c;
+    --icon-color: #C7C8C9;
+} 
+
+:root [data-theme='light'] {
+
+    --primary-color: #0b0b0f;
+    --primary-bg-color: #e9e9e9;
+    --secondary-bg-color: #C7c8c9;
+    --primary-border-color:  #C7c8c9;
+    --secondary-border-color: #9a9a9c;
+
+    --title-color: #0b0b0f;
+    --text-color: #28292E;
+    --link-color: #28292E;
+    --icon-color: #56575A;
+}
+
+html[data-theme='light'] .brand-logo {
+    filter: invert(1);
+} 
+/* html[data-theme='light'] .tecnologias-logo */
+
+/*  Reset CSS  
+    Padronizar Navegadores
+*/ 
+* {
+    margin: 0;      /*margem*/  
+    padding: 0;     /* espaçamento */
+    vertical-align: baseline;
+    list-style: none;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-bg-color) transparent;
+}
+
+body {
+    background: var(--primary-bg-color);
+    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color); /* cor do Texto*/
+}
