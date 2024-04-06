@@ -10,24 +10,25 @@
 </head>
 
 <body>
-    <header>  <!-- cabeçalho -->
-        <nav> 
-            <ul>
-                <li> Home </li>
-                <li> Projetos </li>
-                <li> Sobre </li>
-                <li> Contato </li>
+    <header class="header">  <!-- cabeçalho -->
+        <nav class="header-nav"> 
+            <ul class="menu menu-principal">
+                <li class="menu-item"> Home </li>
+                <li class="menu-item"> Projetos </li>
+                <li class="menu-item"> Sobre </li>
+                <li class="menu-item"> Contato </li>
             </ul>
         </nav>
 
-        <div>
-            <a href="index.html">
-                <img src="img/logo.png" alt="">
+        <div class="header-brand">
+            <a href="#home">
+                <img src="img/logo.png" alt="" class="brand-logo">
             </a>
         </div>
 
-        <div>
-            <i> </i> <!-- Icone modo Dark e Light -->
+        <div class="header-toggle">
+            <i id="toggleTheme" class="bi bi-sun"> </i>
+            <!-- Icone modo Dark e Light Lua e Sol -->
         </div>
     </header> <!-- FIM cabeçalho --> 
     

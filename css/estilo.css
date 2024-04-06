@@ -97,4 +97,26 @@ p, span, li {
 p {
     text-align: justify;
 }
-
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;  /* comprimento*/
+    padding: 0.5rem 1rem;
+    z-index: 2; /* sobreposição */
+}
+.header-toggle{
+    display: flex;
+    justify-content: flex-end;
+}
+.header-brand .brand-logo {
+    width: 3.25rem;  /* comprimento */
+    height: 3.25rem;  /* altura */
+}
+#toggleTheme {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: ease-in-out .4s;
+}
