@@ -170,3 +170,58 @@ p {
     justify-content: center;
     padding: 0.5rem 1rem;
 }
+.menu-icon, .menu-text{
+    color: var(--text-color);
+}
+.menu-icon{
+    font-size: 1.5rem;
+}
+.header-nav{
+    display: none;
+}
+/**---------- Fim  CSS  Menu -------------- **/
+.menu-social{
+    gap: 1rem;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+    background: transparent;
+    border-radius: 5rem;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+    color: var(--primary-color);
+    box-shadow: 5px 5px 15px #56575A;  /* caixa de sombra  */
+}
+.btn:hover{
+    transform: scale(1.05);
+    transition: ease-in-out .3s;
+}
+.btn span, .btn i{
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+.btn-primary span {
+    color: var(--primary-color);
+}
+.btn-primary {
+    border: 1px solid var(--primary-color);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.video iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
