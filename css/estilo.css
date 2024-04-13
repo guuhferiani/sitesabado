@@ -111,7 +111,7 @@ p {
     justify-content: flex-end;
 }
 .header-brand .brand-logo {
-    width: 3.25rem;  /* comprimento */
+    width: 3.25rem;  /* comprimento */  /*  3.25rem = 52px */ 
     height: 3.25rem;  /* altura */
 }
 #toggleTheme {
@@ -119,4 +119,32 @@ p {
     color: var(--primary-color);
     cursor: pointer;
     transition: ease-in-out .4s;
+}
+.menu {   /* UL */
+    display: flex;
+    align-items: center;   /* alinha itens */
+    background-color: var(--primary-bg-color);
+}
+
+.menu-principal{    /* Estrutura UL */
+    gap: 1rem;
+}
+
+.menu-item{
+    width: 100%;
+}
+
+.menu-link{    /* Estrutura Li */
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.menu-link.active, 
+.menu-link:hover {
+    color: var(--primary-color);
+}
+.menu-text{   /* TAG span */
+    font-size: .75rem;
+    text-transform: uppercase;
 }
