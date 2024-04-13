@@ -47,12 +47,23 @@ html[data-theme='light'] .brand-logo {
     scrollbar-width: thin;
     scrollbar-color: var(--secondary-bg-color) transparent;
 }
-
 body {
     background: var(--primary-bg-color);
     font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-color); /* cor do Texto*/
 }
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-bg-color);
+    border-radius: 50rem;
+}
+
 a {
     text-decoration: none;
     color: var(--text-color);
@@ -125,26 +136,37 @@ p {
     align-items: center;   /* alinha itens */
     background-color: var(--primary-bg-color);
 }
-
 .menu-principal{    /* Estrutura UL */
     gap: 1rem;
 }
-
 .menu-item{
     width: 100%;
 }
-
 .menu-link{    /* Estrutura Li */
     display: flex;
     align-items: center;
     gap: .5rem;
 }
 
-.menu-link.active, 
-.menu-link:hover {
+.menu-link.active .menu-icon,
+.menu-link.active .menu-text, 
+.menu-link:hover .menu-icon, 
+.menu-link:hover .menu-text {
     color: var(--primary-color);
 }
 .menu-text{   /* TAG span */
     font-size: .75rem;
     text-transform: uppercase;
+}
+.menu-mobile{
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid var(--primary-border-color);
+}
+.menu-mobile .menu-link{
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 1rem;
 }
