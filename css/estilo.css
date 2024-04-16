@@ -34,7 +34,9 @@
 html[data-theme='light'] .brand-logo {
     filter: invert(1);
 } 
-/* html[data-theme='light'] .tecnologias-logo */
+html[data-theme='light'] .tecnologias-logo {
+    filter: invert(80%);
+  }
 
 /*  Reset CSS  
     Padronizar Navegadores
@@ -42,6 +44,7 @@ html[data-theme='light'] .brand-logo {
 * {
     margin: 0;      /*margem*/  
     padding: 0;     /* espaçamento */
+    box-sizing: border-box;
     vertical-align: baseline;
     list-style: none;
     scrollbar-width: thin;
@@ -109,13 +112,13 @@ p {
     text-align: justify;
 }
 .header {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;  /* comprimento*/
-    padding: 0.5rem 1rem;
-    z-index: 2; /* sobreposição */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  z-index: 2;
 }
 .header-toggle{
     display: flex;
@@ -188,29 +191,32 @@ p {
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
-    width: 100%;
-    padding: 0.875rem 1.5rem;
+    /*  width: ;  */
     background: transparent;
-    border-radius: 5rem;
+    border-radius: 3.125rem;
+    border: none;
+    padding: 0.875rem 1.5rem;
     transition: ease-in-out .3s;
     cursor: pointer;
     color: var(--primary-color);
-    box-shadow: 5px 5px 15px #56575A;  /* caixa de sombra  */
-}
-.btn:hover{
+  }
+  .btn:hover {
     transform: scale(1.05);
     transition: ease-in-out .3s;
-}
-.btn span, .btn i{
+  }
+  
+  .btn span, .btn i {
     font-size: 1.25rem;
     text-transform: uppercase;
-}
-.btn-primary span {
+  }
+  
+  .btn-primary span {
     color: var(--primary-color);
-}
-.btn-primary {
+  }
+  
+  .btn-primary {
     border: 1px solid var(--primary-color);
-}
+  }
 main {
     display: flex;
     flex-direction: column;
