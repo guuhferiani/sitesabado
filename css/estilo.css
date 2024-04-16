@@ -112,13 +112,13 @@ p {
     text-align: justify;
 }
 .header {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 0.5rem 1rem;
-  z-index: 2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;  /* comprimento*/
+    padding: 0.5rem 1rem;
+    z-index: 2; /* sobreposição */
 }
 .header-toggle{
     display: flex;
