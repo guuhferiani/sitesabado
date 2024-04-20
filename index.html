@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Site do Gustavo | Turma Sabado </title>
     <!-- title = titulo -->
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
@@ -121,10 +121,10 @@
             </a>
         </div>
         <div class="video">
-            <!-- <iframe src="https://www.youtube.com/embed/CcYaZybdQYc" title="Try Google Workspace For Free Today!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            <iframe src="https://www.youtube.com/embed/CcYaZybdQYc" title="Try Google Workspace For Free Today!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
             </iframe>
         </div>
-    </main>  fim da main -->
+    </main> <!-- fim da main -->
 
     <section class="tecnologias"> <!-- section = secao -->
         <h2> Conhecimento nas principais tecnologias do desenvolvimento. </h2>
@@ -145,7 +145,7 @@
     </section> 
     <!-- fim da seção -->
 
-    <section class="projetos">
+    <section id="projetos" class="projetos">
         <h2>Projetos</h2>
 
         <div class="projetos-container">
@@ -156,12 +156,12 @@
                 
                 <div class="card-body">
                     <h3 class="card-title"> Josi's Box Ecommerce </h3>
-                    <p> Loja Virtual de Livros </p>
+                    <p class="card-descricao"> Loja Virtual de Livros </p>
 
                     <ul class="card-list">
-                        <li> Favoritos </li>
-                        <li> Carrinho de Compras </li>
-                        <li> Filtro de Preço e Categoria </li>
+                        <li class="card-item"> Favoritos </li>
+                        <li class="card-item"> Carrinho de Compras </li>
+                        <li class="card-item"> Filtro de Preço e Categoria </li>
                     </ul>
 
                     <ul class="tecnologias-lista">
@@ -190,17 +190,162 @@
                             </a>
                         </button>
                         <button class="btn">
-                            <span> Repositório </span>
+                            <a href="https://github.com/guuhferiani/josis-teste"
+                            target="_blank">
+                                <span> Repositório </span>
+                            </a>
                         </button>
                     </div>
-                    
-                </div> <!-- FIM card-body -->
+                </div> <!-- FIM card-body Josis -->
+            </div> <!-- projeto-card -->
+
+            <div class="projeto-card card-reverso">
                 
+                <img class="cartao" src="img/projetos/portfolio.PNG" alt="">
+
+                <div class="card-body">
+                    <h3 class="card-title"> Portfolio Pessoal </h3>
+                    <p class="card-descricao"> A história por trás dos Estilos Artísticos. </p>
+
+                    <ul class="card-list">
+                        <li class="card-item"> 
+                            Postagens relacionadas em destaque.
+                        </li>
+                        <li class="card-item"> Filtros por Tag e Categorias. </li>
+                        <li class="card-item"> Biografia do Autor. </li>
+                    </ul>
+
+                    <ul class="tecnologias-lista">
+                        <li class="tecnologias-item">
+                            <img class="tecnologias-logo" src="img/tecnologias/HTML5.svg" alt="">
+                        </li>
+
+                        <li class="tecnologias-item">
+                            <img class="tecnologias-logo" src="img/tecnologias/Css.svg" alt="">
+                        </li>
+
+                        <li class="tecnologias-item">
+                            <img class="tecnologias-logo" src="img/tecnologias/Bootstrap.svg" alt="">
+                        </li>
+
+                        <li class="tecnologias-item">
+                            <img class="tecnologias-logo" src="img/tecnologias/Javascript.svg" alt="">
+                        </li>
+                    </ul>
+
+                </div> <!-- fim card body -->
+
+
+            </div> <!-- fim  card reverso -->
             
-            </div>
+            <!-- Games Store -->
+            <div class="projeto-card">
+
+                <img class="cartao" src="img/projetos/games-store.jpg" alt="">
+                
+                <div class="card-body">
+                    <h3 class="card-title"> Games Store </h3>
+                    <p class="card-descricao"> Loja online de Games. </p>
+
+                    <ul class="card-list">
+                        <li class="card-item"> Favoritos </li>
+                        <li class="card-item"> Carrinho de Compras </li>
+                        <li class="card-item"> Filtro de Preço e Categoria </li>
+                    </ul>
+
+                    <ul class="tecnologias-lista">
+                        <li class="tecnologias-item">
+                            <img class="tecnologias-logo" src="img/tecnologias/Angular.svg" alt="">
+                        </li>
+
+                        <li class="tecnologias-item">
+                            <img class="tecnologias-logo" src="img/tecnologias/TypeScript.svg" alt="">
+                        </li>
+
+                        <li class="tecnologias-item">
+                            <img class="tecnologias-logo" src="img/tecnologias/Bootstrap.svg" alt="">
+                        </li>
+
+                        <li class="tecnologias-item">
+                            <img class="tecnologias-logo" src="img/tecnologias/Javascript.svg" alt="">
+                        </li>
+                    </ul>
+
+                    <div class="card-button">
+                        <button class="btn btn-primary">
+                            <a href="https://store.playstation.com/pt-br/pages/latest" target="_blank">
+                                <span> Prévia </span>
+                                <i class="bi bi-arrow-up-right"> </i>
+                            </a>
+                        </button>
+                        <button class="btn">
+                            <a href="https://github.com/guuhferiani/josis-teste"
+                            target="_blank">
+                                <span> Repositório </span>
+                            </a>
+                        </button>
+                    </div>
+                </div> <!-- FIM card-body Josis -->
+            </div> <!-- projeto-card -->
 
 
         </div> <!-- fim projetos-container -->
+    </section>
+
+    <section id="sobre" class="sobre">
+        
+        <article class="sobre-content1">
+
+            <img class="sobre-foto" src="img/avatar.jfif" alt="">
+
+            <div class="sobre-descricao">
+                <h2> Sobre Mim </h2>
+                <p> Gustavo Feriani. Enstusiasta por tecnologia, Games e PC, meu primeiro "Hello World" foi na pré-adolescência quando tive o contatp com HTML em Tabelas e aqueles Websites esquisitos feitos em Flash 😅. Atualmente curso especialização em Inteligência Artificial e Machine Learning e atuo como instrutor no Senai SP.
+                </p>
+            </div>
+            <div class="sobre-icons">
+                <i class="bi bi-translate"></i>
+                <span>Inglês: Intermediário</span>
+            </div>
+            <div class="descricao-button">
+                <a href="" target="_blank"> 
+                    <button class="btn btn-primary">
+                        <span> Conecte-se Comigo </span>
+                    </button>
+                </a>
+            </div>
+        </article>
+
+        <article class="sobre-content2">
+            <div class="col1">
+                <div class="row1">
+                    <h3>Formação</h3>
+                    <h4> Inteligência Artificial e Machine Learning </h4>
+                    <p> Fev 2024 - Atualmente </p>
+                    
+                    <div class="sobre-icons">
+                        <i class="bi bi-bank"> </i>
+                        <span> Universidade Cruzeiro do Sul </span> 
+                    </div>
+
+                    <div class="sobre-icons">
+                        <i class="bi bi-mortarboard"> </i>
+                        <span> Pós-graduação Lato Sensu - Especialização </span>
+                    </div>
+                </div> <!-- fim row 1  -->
+
+                
+                
+
+            </div> <!-- Fim col - 1 -->
+
+
+            <div class="col2">
+
+
+            </div> <!--  Fim col - 2 -->
+        </article>
+
     </section>
 
     
