@@ -163,7 +163,7 @@ p {
 }
 .menu-mobile{
     width: 100vw;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     justify-content: space-between;
     border-top: 1px solid var(--primary-border-color);
@@ -260,13 +260,42 @@ main {
     align-items: center;
     width: 4.8rem;
     height: 4.8rem;
-    /**/ 
-    border: 3px solid var(--secondary-border-color);
-    /**/
-    border-radius: 1rem;
+    /*aspect-ratio: 1/1;*/
+    border: 1px solid var(--secondary-border-color);
+    border-radius: 5rem;
+
 }
 .tecnologias-logo {
     height: 2.4rem;
 }
-
 /* ------ fim da seção Tecnologias */
+
+/* Projetos */
+.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.projetos-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.projeto-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;  
+}
+.cartao{
+    width: 70rem;
+    border-radius: 0.5rem;
+    object-fit: cover;  
+    object-position: center;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1rem;
+}
