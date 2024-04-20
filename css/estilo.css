@@ -199,24 +199,24 @@ p {
     transition: ease-in-out .3s;
     cursor: pointer;
     color: var(--primary-color);
-  }
-  .btn:hover {
+}
+.btn:hover {
     transform: scale(1.05);
     transition: ease-in-out .3s;
-  }
+}
   
-  .btn span, .btn i {
+.btn span, .btn i {
     font-size: 1.25rem;
     text-transform: uppercase;
-  }
+}
   
-  .btn-primary span {
+.btn-primary span {
     color: var(--primary-color);
-  }
+}
   
-  .btn-primary {
+.btn-primary {
     border: 1px solid var(--primary-color);
-  }
+}
 main {
     display: flex;
     flex-direction: column;
@@ -289,7 +289,7 @@ main {
 .cartao{
     width: 70rem;
     border-radius: 0.5rem;
-    object-fit: cover;  
+    object-fit: cover;   /***/
     object-position: center;
 }
 .card-body {
@@ -299,3 +299,35 @@ main {
     align-items: flex-start;
     gap: 1rem;
 }
+.card-descricao {
+    color: var(--title-color);
+}
+.card-list {
+    margin-left: 1.25rem;
+}
+.card-item {
+    list-style: disc;
+}
+.card-button, .descricao-button {
+    display: flex;
+    flex-flow: row wrap;  /****/
+    justify-content: center;
+}
+.card-button .btn {
+    padding: .65rem 1.25rem;
+}
+.card-button .btn span {
+    font-size: 1rem;
+}
+.card-body .tecnologias-item {
+    width: 4rem;
+    height: 4rem;
+}
+.card-body .tecnologias-logo {
+    height: 2rem;
+}
+.projetos .btn {
+    width: auto;  /***/ 
+    margin: auto;
+}
+/* fim projeto */
