@@ -488,7 +488,42 @@ footer p {
     .contato p {
         width: 80%;
     }
-    
-    
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tecnologias {
+        padding: 6.25rem 6rem 2rem 6rem;
+        margin-top: -6rem;
+    }
+    footer {
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px ) {
+    .projeto-card {
+        flex-direction: row;
+    }
+
+    .projeto-card .card-reverso {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .cartao {
+        width: 55%;
+    }
+    .sobre {
+        gap: 5rem;
+    }
+    .sobre-content1, .sobre-content2 {
+        display: grid;
+        grid-template-columns: 34% 60%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 4rem;
+    }
 
 }
+    
