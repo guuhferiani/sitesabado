@@ -310,7 +310,7 @@ main {
 }
 .card-button, .descricao-button {
     display: flex;
-    flex-flow: row wrap;  /****/
+    flex-flow: row wrap; 
     justify-content: center;
 }
 .card-button .btn {
@@ -327,7 +327,7 @@ main {
     height: 2rem;
 }
 .projetos .btn {
-    width: auto;  /***/ 
+    width: auto;
     margin: auto;
 }
 /* fim projeto */
@@ -482,12 +482,6 @@ footer p {
     main, .projeto, .sobre {
         padding: 8rem 6rem 4rem 6rem;
     }
-    .contato {
-        padding: 6rem;
-    }
-    .contato p {
-        width: 80%;
-    }
     .main-content {
         display: flex;
         flex-direction: column;
@@ -496,6 +490,12 @@ footer p {
     .tecnologias {
         padding: 6.25rem 6rem 2rem 6rem;
         margin-top: -6rem;
+    }
+    .contato {
+        padding: 6rem;
+    }
+    .contato p {
+        width: 80%;
     }
     footer {
         margin: 0;
@@ -506,7 +506,6 @@ footer p {
     .projeto-card {
         flex-direction: row;
     }
-
     .projeto-card .card-reverso {
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -524,6 +523,10 @@ footer p {
         align-items: flex-start;
         gap: 4rem;
     }
-
-}
-    
+    .sobre-descricao h2 {
+        text-align: left;
+    }
+    .descricao-button {
+        justify-content: flex-start;
+    }
+}   
