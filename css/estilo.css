@@ -163,7 +163,7 @@ p {
 }
 .menu-mobile{
     width: 100vw;
-    /* position: fixed; */
+    position: fixed;
     bottom: 0;
     justify-content: space-between;
     border-top: 1px solid var(--primary-border-color);
@@ -238,7 +238,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     gap: 1.25rem;
-    padding: 6.25rem 1rem 2rem;   /**  return   **/
+    padding: 6.25rem 1rem 2rem;
     margin-top: -5.5rem;
     background: var(--secondary-bg-color);
 }
@@ -260,9 +260,9 @@ main {
     align-items: center;
     width: 4.8rem;
     height: 4.8rem;
-    /*aspect-ratio: 1/1;*/
+    aspect-ratio: 1/1;
     border: 1px solid var(--secondary-border-color);
-    border-radius: 5rem;
+    border-radius: 50rem;
 
 }
 .tecnologias-logo {
@@ -287,7 +287,7 @@ main {
     gap: 2rem;  
 }
 .cartao{
-    width: 70rem;
+    width: 100%;
     border-radius: 0.5rem;
     object-fit: cover;   /***/
     object-position: center;
@@ -411,4 +411,84 @@ main {
     align-items: flex-start;
     gap: 0.625rem;
     border: 1px var(--secondary-bg-color);
+}
+.accordion-item.active .accordion-header {
+    background: var(--secondary-bg-color);
+}
+.accordion-item.active .accordion-body {
+    display: flex;
+}
+.accordion-item.active .bi-caret-down-fill {
+    transform: rotate(180deg);
+}
+
+/* Contato */
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    border-top: 1px solid var(--primary-border-color);
+    border-bottom: 1px solid var(--primary-border-color);
+}
+.contato p {
+    text-align: center;
+}
+.contato .btn {
+    width: auto;
+}
+.contato .email {
+    text-transform: lowercase;
+}
+
+/* footer */
+footer {
+   margin-bottom: 5rem; 
+}
+footer p {
+    font-size: .875rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsividade  768px  */
+@media (min-width: 768px ) {   /* largura de tela igual ou maior  */
+    
+    .header {
+        position: fixed;
+        border-bottom: 1px solid var(--primary-border-color);
+        padding: 1rem 6rem;
+        background: var(--primary-bg-color);
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .header-nav {
+        display: flex;
+    }
+    .header-nav,
+    .header-toggle {
+       min-width: 30%; 
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    main, .projeto, .sobre {
+        padding: 8rem 6rem 4rem 6rem;
+    }
+    .contato {
+        padding: 6rem;
+    }
+    .contato p {
+        width: 80%;
+    }
+    
+    
+
 }
