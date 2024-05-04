@@ -5,7 +5,7 @@
     /* definir cores padrão em Variável */
     
     --primary-color: #f0f0f0;  /* cor textos */
-    --primary-bg-color: #171111;  /* BG = Background */
+    --primary-bg-color: #131313;  /* BG = Background */
     --secondary-bg-color: #28292E;
     --primary-border-color: #28292E;
     --secondary-border-color: #56575A;
@@ -378,7 +378,6 @@ main {
     flex-direction: column;
     gap: .5rem;
 }
-
 .accordion-header {
     width: 100%;
     display: flex;
@@ -466,7 +465,6 @@ footer p {
     .nav-mobile {
         display: none;
     }
-
     .header-nav {
         display: flex;
     }
