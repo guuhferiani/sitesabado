@@ -45,14 +45,13 @@ html[data-theme='light'] .tecnologias-logo {
     list-style: none;
     scrollbar-width: thin;
     scrollbar-color: var(--secondary-bg-color) transparent;
-}
+  }
 
 body {
     background: var(--primary-bg-color);
     font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-color);
 }
-
 ::-webkit-scrollbar {
     width: 0.5rem;
 }
@@ -158,30 +157,13 @@ p {
     background-color: var(--primary-bg-color);
 }
 
-.menu-principal {
-    gap: 1rem;
-}
-
 .menu-item {
     width: 100%;
 }
-
 .menu-link {
     display: flex;
     align-items: center;
     gap: .5rem;
-}
-
-.menu-link.active .menu-icon,
-.menu-link.active .menu-text,
-.menu-link:hover .menu-icon,
-.menu-link:hover .menu-text {
-    color: var(--primary-color);
-}
-
-.menu-text {
-    font-size: .75rem;
-    text-transform: uppercase;
 }
 
 .menu-mobile {
@@ -197,7 +179,21 @@ p {
     justify-content: center;
     padding: 0.5rem 1rem;
 }
+.menu-link.active .menu-icon,
+.menu-link.active .menu-text,
+.menu-link:hover .menu-icon,
+.menu-link:hover .menu-text {
+    color: var(--primary-color);
+}
 
+.menu-principal {
+    gap: 1rem;
+}
+
+.menu-text {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
 .menu-icon,
 .menu-text {
     color: var(--text-color);
@@ -249,7 +245,7 @@ p {
     border: 1px solid var(--primary-color);
 }
 
-main {
+#home {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -259,11 +255,14 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    margin: 1rem;
+    padding-top: 1rem;
 }
 
 .video iframe {
     width: 100%;
     aspect-ratio: 16/9;
+    margin: 1rem;
 }
 
 /* Seção Tecnologias */
@@ -289,6 +288,7 @@ main {
     display: flex;
     flex-flow: row wrap;
     gap: .5rem;
+    
 }
 
 .tecnologias-item {
@@ -301,6 +301,7 @@ main {
     aspect-ratio: 1/1;
     border: 1px solid var(--secondary-border-color);
     border-radius: 50rem;
+    
 }
 
 .tecnologias-logo {
@@ -313,13 +314,16 @@ main {
 .projetos {
     display: flex;
     flex-direction: column;
+    padding-top: 1rem;
     gap: 2rem;
+    padding-top: 4rem;
 }
 
 .projetos-container {
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    padding-top: 2rem;
 }
 
 .projeto-card {
@@ -391,7 +395,9 @@ main {
     flex-direction: column;
     gap: 1.5rem;
 }
-
+.sobre-content2{
+    padding-bottom: 1rem;
+}
 .sobre-content1,
 .sobre-content2 {
     display: flex;
@@ -459,16 +465,21 @@ main {
 }
 
 .accordion-header.start {
-    border-radius: 1rem 1rem 0rem 0rem;
+    border-radius: 0.25rem 0.25rem 0rem 0rem;
 }
 
 .accordion-header.end,
 .accordion-item.active .accordion-body.end {
-    border-radius: 0rem 0rem 1rem 1rem;
+    border-radius: 0rem 0rem 0.25rem 0.25rem;
 }
 
 .accordion-item.active .accordion-header.end {
-    border-radius: 0rem;
+    border-radius: 0;
+}
+
+.accordion-item i {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .accordion-body {
@@ -477,7 +488,7 @@ main {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.625rem;
-    border: 1px var(--secondary-bg-color);
+    border: 1px solid var(--primary-border-color);
 }
 
 .accordion-item.active .accordion-header {
@@ -501,6 +512,9 @@ main {
     gap: 1.5rem;
     border-top: 1px solid var(--primary-border-color);
     border-bottom: 1px solid var(--primary-border-color);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    
 }
 
 .contato p {
@@ -558,7 +572,8 @@ footer p {
 
     #home,
     .projetos,
-    .sobre {
+    .sobre,
+    .contato {
         padding: 8rem 6rem 4rem 6rem;
     }
 
