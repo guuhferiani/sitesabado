@@ -26,7 +26,7 @@ accordionsHeaders.forEach(header => {
 
 menuLinks.forEach(item => {
     item.addEventListener("click", () => {
-        menuLinks.forEach(i =>classList.remove("active"));
-        item.classList.add("active");
+      menuLinks.forEach(i => i.classList.remove("active"));
+      item.classList.add("active");
     })
 })
