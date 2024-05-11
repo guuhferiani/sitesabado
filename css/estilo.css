@@ -475,12 +475,10 @@ p {
 .accordion-item.active .accordion-header.end {
     border-radius: 0;
 }
-
 .accordion-item i {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-
 .accordion-body {
     display: none;
     padding: 1.25rem;
